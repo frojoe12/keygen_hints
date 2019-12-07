@@ -1,0 +1,13 @@
+cd ~/.ssh
+
+ssh-keygen -C "email@mail.com"
+
+// must ssh-add if name not standard
+ssh-add -K ~/.ssh/id_rsa_[optional_name]
+
+// copy to clipboard
+pbcopy < filename .pub [public key]
+
+// paste into server
+
+ssh -T name@name.com
